@@ -1,0 +1,18 @@
+/* category-create.component.css */
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+}

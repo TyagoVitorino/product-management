@@ -1,0 +1,16 @@
+/* Estilo para a navbar */
+.navbar {
+  background-color: #f8f9fa !important; /* fundo claro para navbar */
+  color: #343a40; /* cor do texto */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #007bff !important; /* cor dos links */
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #0056b3 !important; /* cor do link ativo */
+}
+
+

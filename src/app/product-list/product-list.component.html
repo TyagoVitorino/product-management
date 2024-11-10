@@ -1,0 +1,28 @@
+<div class="container product-list mt-4">
+  <h2 class="text-center mb-4">Lista de Produtos</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price | currency }}</td>
+        <td>{{ product.category?.name || 'Sem Categoria' }}</td>
+        <td class="text-center">
+          <button class="btn btn-warning btn-sm me-2" [routerLink]="['/products/edit', product.id]">Editar</button>
+          <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.id)">Excluir</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

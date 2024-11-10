@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <h2>Criar Nova Categoria</h2>
+  <form (ngSubmit)="saveCategory()">
+    <div class="form-group">
+      <label for="name">Nome da Categoria</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="category.name"
+        name="name"
+        required
+        placeholder="Digite o nome da categoria"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">
+      Criar Categoria
+    </button>
+  </form>
+</div>
